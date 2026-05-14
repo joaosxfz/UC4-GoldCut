@@ -1,120 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Atendimento — HTML Puro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Atendimento - GoldCut</title>
 </head>
 
-<body>
+<body class="bg-black text-light">
 
-  <header>
-    <h1>SuporteApp</h1>
-    <nav>
-      <a href="#">Início</a>
-      <a href="#">Pedidos</a>
-      <a href="#">FAQ</a>
-      <a href="#">Contato</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-warning">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold text-warning" href="#">
+                GoldCut
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Serviços</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./agendamento.html">Agendamento</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./assinatura.html">Assinaturas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./atendimento.html">Atendimento</a>
+                    </li>
+
+                     <li class="nav-item">
+                        <a class="nav-link" href="./sobre.html">Sobre</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
     </nav>
-  </header>
 
-  <div class="hero">
-    <h2>Central de Atendimento</h2>
-    <p>Estamos aqui para ajudar. Escolha o canal que preferir ou envie uma mensagem.</p>
-  </div>
+    <section class="container py-5">
 
-  <section>
-    <h3>Canais disponíveis</h3>
-    <div class="canais">
-      <div class="canal">
-        <div class="icone">💬</div>
-        <strong>Chat ao vivo</strong>
-        <span>Atendimento imediato</span>
-        <div class="status">● Online</div>
-      </div>
-      <div class="canal">
-        <div class="icone">📱</div>
-        <strong>WhatsApp</strong>
-        <span>(47) 99999-0000</span>
-        <div class="status">● Disponível</div>
-      </div>
-      <div class="canal">
-        <div class="icone">✉️</div>
-        <strong>E-mail</strong>
-        <span>suporte@app.com</span>
-        <div class="status espera">⏱ ~2h resposta</div>
-      </div>
-      <div class="canal">
-        <div class="icone">📞</div>
-        <strong>Telefone</strong>
-        <span>0800 123 4567</span>
-        <div class="status espera">Seg–Sex 8h–18h</div>
-      </div>
-    </div>
+        <h2 class="text-center text-warning mb-5">
+            Atendimento
+        </h2>
 
-    <h3>Perguntas frequentes</h3>
-    <div class="faq">
-      <details>
-        <summary>Como rastrear meu pedido?</summary>
-        <div class="faq-resp">
-          Acesse "Minha conta" → "Pedidos" e clique em "Rastrear". Atualizações também são enviadas por e-mail
-          automaticamente.
+        <div class="row justify-content-center">
+
+            <div class="col-md-8">
+
+                <div class="bg-dark p-4 rounded border border-warning">
+
+                    <h4 class="text-warning mb-4">
+                        Entre em Contato
+                    </h4>
+
+                    <form>
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Nome
+                            </label>
+
+                            <input type="text" class="form-control" placeholder="Digite seu nome">
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                E-mail
+                            </label>
+
+                            <input type="email" class="form-control" placeholder="Digite seu e-mail">
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Mensagem
+                            </label>
+
+                            <textarea class="form-control" rows="5" placeholder="Digite sua mensagem"></textarea>
+
+                        </div>
+
+                        <button class="btn btn-warning w-100 fw-bold">
+
+                            Enviar Mensagem
+
+                        </button>
+
+                    </form>
+
+                    <hr class="my-5 border-warning">
+
+                    <div class="text-center">
+
+                        <h5 class="text-warning">
+                            Informações de Contato
+                        </h5>
+
+                        <p>WhatsApp: (47) 99999-9999</p>
+
+                        <p>Email: contato@goldcut.com</p>
+
+                        <p>Instagram: @goldcut</p>
+
+                        <p>Joinville - SC</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-      </details>
-      <details>
-        <summary>Como solicitar reembolso?</summary>
-        <div class="faq-resp">
-          Solicite em até 7 dias após a compra. Vá em "Pedidos" → selecione o item → "Solicitar devolução". Prazo de
-          estorno: 5 dias úteis.
-        </div>
-      </details>
-      <details>
-        <summary>Como alterar meus dados cadastrais?</summary>
-        <div class="faq-resp">
-          Acesse "Minha conta" → "Dados pessoais" e edite as informações. Alterações de e-mail exigem confirmação por
-          link.
-        </div>
-      </details>
-      <details>
-        <summary>Meu pagamento não foi aprovado. O que fazer?</summary>
-        <div class="faq-resp">
-          Verifique os dados do cartão e o limite disponível. Se necessário, entre em contato com seu banco ou tente
-          outro método.
-        </div>
-      </details>
-    </div>
 
-    <h3>Abrir chamado</h3>
-    <div class="formulario">
-      <label>Nome completo</label>
-      <input type="text" placeholder="Ex: Maria Silva" />
+    </section>
 
-      <label>E-mail</label>
-      <input type="email" placeholder="maria@exemplo.com" />
+    <footer class="text-center p-4 border-top border-warning">
 
-      <label>Categoria</label>
-      <select>
-        <option value="">Selecione...</option>
-        <option>Problema com pedido</option>
-        <option>Dúvida financeira</option>
-        <option>Problema técnico</option>
-        <option>Cancelamento</option>
-        <option>Outro</option>
-      </select>
+        <h4 class="text-warning">
+            GoldCut
+        </h4>
 
-      <label>Mensagem</label>
-      <textarea placeholder="Descreva o que aconteceu..."></textarea>
+        <p>
+            © 2026 - Todos os direitos reservados
+        </p>
 
-      <button type="button">Enviar mensagem</button>
-    </div>
-  </section>
+    </footer>
 
-  <footer>
-    © 2026 SuporteApp · Todos os direitos reservados
-  </footer>
-
-  <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

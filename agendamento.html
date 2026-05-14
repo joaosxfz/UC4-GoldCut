@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="style.css">
 
     <title>Agendamento - GoldCut</title>
 </head>
@@ -21,7 +23,9 @@
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
                 <span class="navbar-toggler-icon"></span>
+
             </button>
 
             <div class="collapse navbar-collapse" id="menu">
@@ -29,15 +33,27 @@
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Início</a>
+                        <a class="nav-link" href="./index.html">Início</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Serviços</a>
+                        <a class="nav-link" href="./servicos.html">Serviços</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="agendamento.html">Agendamento</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./assinatura.html">Assinaturas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./atendimento.html">Atendimento</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobre.html">Sobre</a>
                     </li>
 
                 </ul>
@@ -48,7 +64,7 @@
 
     </nav>
 
-    <section id="agendamento" class="container py-5">
+    <section class="container py-5">
 
         <h2 class="text-center text-warning mb-5">
             Agendamento
@@ -62,7 +78,9 @@
 
                     <div class="mb-3">
 
-                        <label class="form-label text-light">Nome</label>
+                        <label class="form-label text-light">
+                            Nome
+                        </label>
 
                         <input type="text" class="form-control" placeholder="Digite seu nome">
 
@@ -70,7 +88,9 @@
 
                     <div class="mb-3">
 
-                        <label class="form-label text-light">Telefone</label>
+                        <label class="form-label text-light">
+                            Telefone
+                        </label>
 
                         <input type="text" class="form-control" placeholder="(47) 99999-9999">
 
@@ -78,12 +98,16 @@
 
                     <div class="mb-3">
 
-                        <label class="form-label text-light">Serviço</label>
+                        <label class="form-label text-light">
+                            Serviço
+                        </label>
 
                         <select class="form-select">
 
                             <option>Corte</option>
+
                             <option>Barba</option>
+
                             <option>Combo</option>
 
                         </select>
@@ -92,7 +116,9 @@
 
                     <div class="mb-3">
 
-                        <label class="form-label text-light">Data</label>
+                        <label class="form-label text-light">
+                            Data
+                        </label>
 
                         <input type="date" class="form-control">
 
@@ -100,15 +126,22 @@
 
                     <div class="mb-4">
 
-                        <label class="form-label text-light">Horários Disponíveis</label>
+                        <label class="form-label text-light">
+                            Horários Disponíveis
+                        </label>
 
                         <select class="form-select">
 
                             <option>09:00</option>
+
                             <option>10:00</option>
+
                             <option>11:00</option>
+
                             <option>14:00</option>
+
                             <option>15:00</option>
+
                             <option>16:00</option>
 
                         </select>
@@ -116,7 +149,9 @@
                     </div>
 
                     <button class="btn btn-warning w-100 fw-bold">
+
                         Confirmar Agendamento
+
                     </button>
 
                 </form>
@@ -129,13 +164,20 @@
 
     <footer class="text-center p-4 border-top border-warning">
 
-        <p class="text-warning fw-bold">GoldCut</p>
-        <p>© 2026 - Todos os direitos reservados</p>
+        <h4 class="text-warning">
+            Contato
+        </h4>
+
+        <p>WhatsApp: (47) 99999-9999</p>
+
+        <p>Instagram: @goldcut</p>
+
+        <p>Joinville - SC</p>
 
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+
 </body>
 
 </html>

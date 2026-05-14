@@ -5,28 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Barbearia Style</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Serviços - GoldCut</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
 
-        <nav class="menu">
+            <a class="navbar-brand fw-bold" href="#">
+                GoldCut
+            </a>
 
-            <h1 class="logo">Barbearia Style</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+            <div class="collapse navbar-collapse" id="menu">
 
-        </nav>
+                <ul class="navbar-nav ms-auto">
 
-    </header>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./servicos.html">Serviços</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./agendamento.html">Agendamento</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./assinatura.html">Assinaturas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./atendimento.html">Atendimento</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobre.html">Sobre</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
 
     <section class="banner">
 
@@ -38,12 +69,13 @@
                 Cortes e barbas com qualidade profissional.
             </p>
 
-            <a href="#" class="botao">Agendar Horário</a>
+            <a href="#" class="botao">
+                Agendar Horário
+            </a>
 
         </div>
 
     </section>
-
 
     <section class="servicos">
 
@@ -87,7 +119,10 @@
 
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
     <link type="text/css" rel="stylesheet" href="./css/style.css">
+
 </body>
 
 </html>
